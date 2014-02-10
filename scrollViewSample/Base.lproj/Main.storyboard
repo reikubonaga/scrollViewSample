@@ -16,18 +16,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MRw-cO-ojc">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRw-cO-ojc">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="project" translatesAutoresizingMaskIntoConstraints="NO" id="yH3-dW-OGH">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="project" translatesAutoresizingMaskIntoConstraints="NO" id="yH3-dW-OGH">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="130" id="SPc-Rj-iR7"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="yH3-dW-OGH" firstAttribute="top" secondItem="MRw-cO-ojc" secondAttribute="top" id="715-Lt-6Fx"/>
+                                    <constraint firstItem="yH3-dW-OGH" firstAttribute="leading" secondItem="MRw-cO-ojc" secondAttribute="leading" id="IgJ-hI-9I6"/>
+                                    <constraint firstItem="yH3-dW-OGH" firstAttribute="centerX" secondItem="MRw-cO-ojc" secondAttribute="centerX" id="J9n-uJ-aaA"/>
+                                    <constraint firstAttribute="trailing" secondItem="yH3-dW-OGH" secondAttribute="trailing" id="SCV-ax-dkx"/>
+                                    <constraint firstAttribute="bottom" secondItem="yH3-dW-OGH" secondAttribute="bottom" constant="438" id="wr7-gc-z6t"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MRw-cO-ojc" secondAttribute="bottom" id="5qy-ok-xze"/>
+                            <constraint firstItem="MRw-cO-ojc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Tn7-AQ-cE8"/>
+                            <constraint firstAttribute="trailing" secondItem="MRw-cO-ojc" secondAttribute="trailing" id="bT7-DR-5r4"/>
+                            <constraint firstItem="MRw-cO-ojc" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="e5h-hR-x0M"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
