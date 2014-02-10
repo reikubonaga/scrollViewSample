@@ -11,6 +11,8 @@
 @interface WTDViewController () <UIScrollViewDelegate>
 
 @property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint *verticalHeight;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint *imageVerticalHeight;
 
 @end
 
@@ -37,11 +39,18 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    [self logScrollView:scrollView withString:@"scrollViewDidScroll"];
+    [self logScrollView:scrollView withString:@"scrollViewDidScroll1"];
+
+
+    //self.verticalHeight.constant = scrollView.contentOffset.y;
+    self.imageVerticalHeight.constant = scrollView.contentOffset.y;
+    [self logScrollView:scrollView withString:@"scrollViewDidScroll2"];
 }
 
 - (void)logScrollView:(UIScrollView *)scrollView withString:(NSString *)name {
     NSLog(@"%@ contentOffset x: %f y: %f, contentInset top: %f bottom: %f left: %f right: %f, contentSize height: %f, width: %f", name, scrollView.contentOffset.x, scrollView.contentOffset.y, scrollView.contentInset.top, scrollView.contentInset.bottom, scrollView.contentInset.left, scrollView.contentInset.right, scrollView.contentSize.height, scrollView.contentSize.width);
+    NSLog(@"verticalHeight %f", self.verticalHeight.constant);
+    NSLog(@"bounds x: %f, y: %f h: %f, w: %f", scrollView.bounds.origin.x, scrollView.bounds.origin.y, scrollView.bounds.size.height, scrollView.bounds.size.width);
 }
 
 @end
