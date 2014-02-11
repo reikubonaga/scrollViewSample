@@ -21,17 +21,17 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ows-Mt-djV">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="182"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="project" translatesAutoresizingMaskIntoConstraints="NO" id="OMN-jc-xPe">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="182"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="182" id="4gc-dS-OdA"/>
+                                            <constraint firstAttribute="height" constant="130" id="4gc-dS-OdA"/>
                                             <constraint firstAttribute="trailing" secondItem="OMN-jc-xPe" secondAttribute="trailing" id="OwU-rA-uqQ"/>
                                             <constraint firstItem="OMN-jc-xPe" firstAttribute="leading" secondItem="ows-Mt-djV" secondAttribute="leading" id="TQQ-BW-IXO"/>
                                             <constraint firstItem="OMN-jc-xPe" firstAttribute="top" secondItem="ows-Mt-djV" secondAttribute="top" id="kPB-Vl-fBw"/>
@@ -44,7 +44,7 @@
                                     <constraint firstItem="ows-Mt-djV" firstAttribute="centerX" secondItem="MRw-cO-ojc" secondAttribute="centerX" id="RLR-RI-U5F"/>
                                     <constraint firstAttribute="trailing" secondItem="ows-Mt-djV" secondAttribute="trailing" id="UWG-1y-v41"/>
                                     <constraint firstItem="ows-Mt-djV" firstAttribute="top" secondItem="MRw-cO-ojc" secondAttribute="top" id="WOJ-qU-XhL"/>
-                                    <constraint firstAttribute="bottom" secondItem="ows-Mt-djV" secondAttribute="bottom" constant="386" id="v4i-tn-Azk"/>
+                                    <constraint firstAttribute="bottom" secondItem="ows-Mt-djV" secondAttribute="bottom" constant="438" id="v4i-tn-Azk"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="ebN-ck-X8l"/>
